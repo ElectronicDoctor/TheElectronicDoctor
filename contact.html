@@ -40,4 +40,38 @@ footer{background:#161b22;padding:20px;text-align:center;border-top:1px solid #3
     <h1>Contact / Book a Repair</h1>
     <p>Fill out the form below and we will respond as soon as possible.</p>
 
-    <form action="https://formsubmit.co/electronicdoctor.help@gmail.com" method="POST">
+    <!-- CONTACT SECTION -->
+<section class="contact-section">
+  <h1>Contact Electronic Doctor</h1>
+  <p>Tell me what's going on with your device and how to reach you.</p>
+
+  <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST" class="contact-form">
+    <!-- FormSubmit settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New message from Electronic Doctor website">
+    <input type="hidden" name="_template" value="box">
+
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number (optional)</label>
+      <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+    </div>
+
+    <div class="form-group">
+      <label for="message">How can I help?</label>
+      <textarea id="message" name="message" rows="5" placeholder="Describe the problem with your PC, laptop, or setup..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary">Send Message</button>
+  </form>
+</section>
+
