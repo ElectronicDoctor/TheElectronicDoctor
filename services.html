@@ -4,7 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electronic Doctor | Services</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: #0d1117;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #58a6ff;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #c9d1d9;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #58a6ff;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom right, #1f6feb, #2ea043);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+.btn.primary {
+    background: #58a6ff;
+    color: #0d1117;
+    font-weight: 700;
+}
+
+.btn.primary:hover {
+    background: #1f6feb;
+}
+
+.btn.secondary {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn.secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* SERVICES */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: #161b22;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    transition: 0.25s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: #58a6ff;
+}
+
+.service-card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+/* CONTACT */
+.contact-info p {
+    margin: 6px 0;
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    background: #161b22;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #30363d;
+    margin-top: 40px;
+}
+    </style>
 </head>
 <body>
 
@@ -56,3 +194,4 @@
 
 </body>
 </html>
+
